@@ -16,4 +16,23 @@ This project is a **Task Management API** developed with **Node.js** and **Expre
 - **Express**: The web framework used to handle HTTP requests.
 - **JSON**: Tasks are stored in memory in a JSON format.
 
+# Task API Documentation
+
+This API provides methods to manage tasks. It supports basic CRUD operations: `GET`, `PUT`, and `DELETE`.
+
+## Base URL
+`http://localhost:3000/tasks/`
+
+### 1. **GET** `/tasks/{id}`
+Retrieve the details of a specific task by its ID.
+
+#### Request
+- **Method**: `GET`
+- **Endpoint**: `/tasks/{id}`
+- **URL Parameters**:
+  - `id` (required): The ID of the task to retrieve.
+
+#### Example Request
+```http
+GET http://localhost:3000/tasks/1
 
